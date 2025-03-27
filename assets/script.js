@@ -29,6 +29,9 @@ let numeriGenerati = [];
 //creo il bottone per l'estrazione casuale dei numeri
 function generaNumeri() {
   let GeneraNumeri = Math.floor(Math.random() * 90 + 1);
+  if (numeriGenerati.includes(GeneraNumeri)) {
+    return generaNumeri();
+  }
   numeriGenerati.push(GeneraNumeri);
   console.log(GeneraNumeri);
 }
