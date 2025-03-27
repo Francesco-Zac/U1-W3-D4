@@ -8,7 +8,7 @@ function createTable() {
   for (let i = 0; i < 10; i++) {
     let row = document.createElement("tr");
     for (let j = 0; j < 10; j++) {
-      if (count > 99) {
+      if (count > 90) {
         break;
       }
       let column = document.createElement("td");
@@ -60,7 +60,7 @@ function createPlayerTable() {
       }
 
       let column = document.createElement("td");
-      column.textContent = Math.floor(Math.random() * 99 + 1);
+      column.textContent = Math.floor(Math.random() * 90 + 1);
       row.appendChild(column);
       count++;
     }
